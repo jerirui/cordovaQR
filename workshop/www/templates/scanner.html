@@ -1,0 +1,13 @@
+<ion-view title="QR Code">
+
+  <ion-content scroll="false" padding="true">
+    <button ng-click="scan()" class="button button-block button-primary">Scan</button>
+    <div class="card">
+      <div class="item item-divider">Barcode Results</div>
+      <div class="item">Text: {{scanResult.text}}
+      	<a ng-show="scanResult.text" class="button button-block button-primary ng-hide" ng-click="openQRLink()">Open</a>
+      </div>
+      <div class="item">Format: {{scanResult.format}}</div>
+    </div>
+  </ion-content>
+</ion-view>
